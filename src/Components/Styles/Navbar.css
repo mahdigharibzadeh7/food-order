@@ -1,0 +1,175 @@
+.navbar-wrapper {
+  @apply flex
+  justify-between
+  items-center
+  mt-2
+  xl:mx-10
+  xl:mt-5;
+}
+
+.brand {
+  @apply hidden
+  font-OST
+  font-bold
+  text-2xl
+  md:block
+  xl:text-4xl;
+}
+
+.search {
+  @apply hidden 
+  sm:block
+  sm:text-xl
+  xl:text-xl;
+}
+
+.basket {
+  @apply text-[#FFDC60]
+  text-2xl
+  xl:text-3xl;
+}
+
+.sign-in-up {
+  @apply flex
+  items-center
+  font-Poppins
+  font-bold;
+}
+
+.sign-in {
+  @apply bg-none
+  text-[#1e1e1e];
+}
+
+.sign-in:hover{
+  @apply text-[#1867FE]
+}
+
+.sign-up {
+  @apply bg-[#1867FE]
+  ml-3
+  px-3
+  xl:px-5;
+}
+
+.sign-up:hover{
+  @apply text-[#1867FE]
+  bg-transparent
+  border
+  border-[#1867FE]
+}
+
+#menu__toggle {
+  @apply opacity-0
+  lg:hidden;
+}
+#menu__toggle:checked + .menu__btn > span {
+  @apply rotate-45;
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  @apply top-0
+  rotate-0;
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  @apply top-0
+  rotate-90;
+}
+#menu__toggle:checked ~ .menu__box {
+  @apply left-0 !important;
+}
+.menu__btn {
+  @apply fixed
+  top-8
+  left-5
+  w-7
+  h-7
+  cursor-pointer
+  z-[1]
+  lg:hidden;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  @apply block
+  absolute
+  w-full
+  h-[2px]
+  bg-[#1867fe]
+  duration-75;
+}
+.menu__btn > span::before {
+  @apply content-[""]
+  -top-2;
+}
+.menu__btn > span::after {
+  @apply content-[""]
+  top-2;
+}
+.menu__box {
+  @apply block
+  fixed
+  top-0
+  -left-full
+  w-[75%]
+  h-[20%]
+  m-0
+  py-20
+  px-0
+  list-none
+  bg-[#1e1e1e]
+  shadow-md
+  duration-300
+  sm:w-[40%]
+  sm:h-[15%]
+  md:w-[40%]
+  md:h-[15%]
+  lg:flex
+  lg:order-none
+  lg:w-[53%]
+  lg:bg-transparent
+  lg:shadow-none
+  lg:p-0
+  lg:static
+  xl:w-[50%];
+}
+
+.menu__item {
+  @apply font-Poppins
+  flex
+  items-center
+  py-3
+  px-6
+  text-white
+  text-xl
+  font-semibold
+  no-underline
+  duration-300
+  lg:text-[#1e1e1e];
+}
+.menu__item:hover {
+  @apply bg-[#ffdc60]
+  text-black
+  lg:bg-transparent
+  lg:flex 
+  lg:items-center
+  lg:flex-col
+  lg:after:block
+  lg:after:h-[3px]
+  lg:after:w-1/2
+lg:after:bg-yellow-400;
+}
+
+.selected {
+  @apply lg:flex
+  lg:items-center
+  lg:flex-col
+  lg:after:block
+  lg:after:h-[3px] 
+  lg:after:w-1/2 
+lg:after:bg-yellow-400;
+}
+
+.menu__item-icon {
+  @apply mr-3
+  lg:hidden;
+}

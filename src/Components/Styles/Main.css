@@ -1,0 +1,79 @@
+.main-container {
+  @apply flex
+  flex-col
+  justify-center
+  mt-20
+  text-center
+  xl:flex-row
+  xl:text-left;
+}
+
+.text {
+  @apply xl:w-full
+  xl:ml-10
+  xl:mt-16;
+}
+
+.text p:first-child {
+  @apply font-OST
+  font-bold
+  text-4xl
+  md:text-5xl
+  lg:text-6xl
+  xl:text-7xl;
+}
+
+.text p:nth-child(2) {
+  @apply font-Poppins
+  font-bold
+  mt-14
+  text-xl
+  md:text-2xl
+  lg:text-3xl
+  xl:text-2xl
+  xl:mt-20;
+}
+
+.btn-container {
+  @apply flex
+  justify-center
+  xl:justify-start
+  xl:mt-16;
+}
+
+.main-btn {
+  @apply bg-[#FFDC60]
+  mt-10
+  py-5
+  px-14
+  rounded-3xl
+  font-OST
+  font-bold
+  text-xl
+  shadow-xl;
+}
+
+.main-btn:hover {
+  @apply border
+  border-[#FFDC60]
+  bg-transparent
+  text-[#FFDC60];
+}
+
+.main-img {
+  @apply mt-16
+  mx-5
+  flex
+  justify-center
+  xl:justify-end
+  xl:mt-0
+  xl:w-[124%];
+}
+
+.main-img img {
+  @apply rounded-full
+  w-[90%]
+  md:w-[70%]
+  lg:w-[70%]
+  xl:w-[90%];
+}

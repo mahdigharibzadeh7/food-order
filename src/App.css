@@ -1,0 +1,7 @@
+.app-container {
+  @apply backdrop-blur-md
+bg-white/80
+  m-3
+  p-2
+  rounded-xl;
+}

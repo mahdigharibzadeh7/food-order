@@ -1,0 +1,6 @@
+.btn{
+    @apply rounded-md
+    p-2
+    text-white
+    text-center
+}

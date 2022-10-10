@@ -1,0 +1,91 @@
+.food-wrapper {
+  @apply flex
+  justify-center;
+}
+
+.main-food-container {
+  @apply bg-gradient-to-t
+from-white
+to-cyan-50
+  my-16
+  mx-1
+  flex
+  flex-col
+  font-Poppins
+  text-center
+  shadow-xl
+  rounded-xl
+  w-[80%]
+  md:w-[70%]
+  lg:w-[70%];
+}
+
+.food-img {
+  @apply my-5
+  flex
+  justify-center
+  md:my-10;
+}
+
+.food-img img {
+  @apply rounded-full
+  w-[65%];
+}
+
+.food-name,
+.food-price {
+  @apply font-bold
+  py-2
+  text-xl
+  md:py-5
+  md:text-2xl;
+}
+
+.food-counter {
+  @apply flex
+  justify-center
+  items-center;
+}
+
+.food-counter p,
+.minus-add {
+  @apply m-2
+  font-bold
+  md:m-3;
+}
+
+.minus-add {
+  @apply text-3xl
+  text-[#1E1E1E]
+  md:text-4xl;
+}
+
+.food-counter p:nth-child(2) {
+  @apply bg-[#1E1E1E]
+  py-1
+  px-3
+  rounded-md
+  text-white;
+}
+
+.add-to-cart-btn {
+  @apply bg-[#FFDC60]
+  font-Poppins
+  font-bold
+  py-4
+  px-8
+  mt-5
+  mb-10
+  rounded-xl
+  shadow-xl
+  md:py-5
+  md:px-16
+  md:text-lg;
+}
+
+.add-to-cart-btn:hover {
+  @apply border
+  border-[#FFDC60]
+  bg-transparent
+  text-[#FFDC60];
+}
